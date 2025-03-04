@@ -22,7 +22,10 @@
     "pdf"
   ],
   "homepage": "https://github.com/Automattic/node-canvas",
-  "repository": "git://github.com/Automattic/node-canvas.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Environmental-intellect/node-canvas"
+  },
   "scripts": {
     "prebenchmark": "node-gyp build",
     "benchmark": "node benchmarks/run.js",
@@ -45,7 +48,7 @@
     "util/"
   ],
   "dependencies": {
-    "node-addon-api": "^7.0.0",
+    "node-addon-api": "^7.1.1",
     "prebuild-install": "^7.1.1"
   },
   "devDependencies": {
@@ -63,7 +66,9 @@
     "node": "^18.12.0 || >= 20.9.0"
   },
   "binary": {
-    "napi_versions": [7]
+    "napi_versions": [
+      10
+    ]
   },
   "license": "MIT"
 }
